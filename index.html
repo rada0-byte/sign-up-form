@@ -7,17 +7,70 @@
     <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <sidebar>
-      <div class="sidebar">
-        <div class="logo">
-          <img src="img/odin-lined.png" alt="logo" />
+    <div class="container">
+      <sidebar>
+        <div class="sidebar">
+          <div class="logo">
+            <img src="img/odin-lined.png" alt="logo" />
+            <h1>ODIN</h1>
+          </div>
+
+          <p class="credit">
+            Photo by <a href="https://unsplash.com/@haliewest">Halie West</a> on
+            <a href="https://unsplash.com">Unsplash</a>
+          </p>
+        </div>
+      </sidebar>
+      <main>
+        <div class="intro">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
         </div>
 
-        <p class="credit">
-          Photo by <a href="https://unsplash.com/@haliewest">Halie West</a> on
-          <a href="https://unsplash.com">Unsplash</a>
-        </p>
-      </div>
-    </sidebar>
+        <form action="#" id="sign-up">
+          <h1 id="h1">lets do this</h1>
+          <div class="form-container">
+            <div class="field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" required />
+            </div>
+            <div class="field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+
+            <div class="field">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm_password"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <button type="submit" form="signup">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </main>
+    </div>
   </body>
 </html>
